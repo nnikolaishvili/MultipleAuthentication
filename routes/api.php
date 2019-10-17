@@ -1,7 +1,5 @@
 <?php
 
-use Illuminate\Http\Request;
-
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -20,5 +18,8 @@ Route::group(['middleware' => ['api.auth']], function () {
     Route::get('user-info', 'API\UserController@info');
     Route::patch('edit-user', 'API\Usercontroller@update');
     Route::post('logout', 'API\AuthController@logout');
+
+    Route::post('insert-push-token', 'API\PushTokenController@store');
+    Route::delete('delete-push-token', 'API\PushTokenController@delete');
 });
 

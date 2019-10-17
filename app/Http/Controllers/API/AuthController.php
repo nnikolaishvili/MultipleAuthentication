@@ -10,7 +10,6 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Validator;
 use App\Traits\ResponseTrait;
 use App\User;
-use Illuminate\Support\Str;
 
 class AuthController extends Controller
 {
