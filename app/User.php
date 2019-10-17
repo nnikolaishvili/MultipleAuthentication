@@ -40,4 +40,8 @@ class User extends Authenticatable
         return $this->hasMany(PushToken::class);
     }
 
+    public function Posts(){
+        return $this->hasMany(Post::class);
+    }
+
 }
