@@ -13,5 +13,6 @@
 
 
 
-Route::view('/', 'welcome')->name('MainPage');
-
+Route::view('/', 'layouts.app')->name('MainPage');
+Route::view('login', 'login-view');
+Route::view('register', 'register-view');

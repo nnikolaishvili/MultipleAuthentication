@@ -1,0 +1,232 @@
+@import 'reset.scss';
+@import "variables.scss";
+
+body{
+    overflow: hidden;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+.rotate{
+    animation: rotation 8s infinite linear;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 80px;
+    .header-logo-options {
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            li {
+                padding-right: 60px;
+                font-family: $OpenSans;
+                font-size: 18px;
+                cursor: pointer;
+                #logo{
+                    width: 230px;
+                }
+                a {
+                    text-decoration: none;
+                    color: #494949;
+                    &:hover {
+                        color: $pink;
+                        transition: 0.5s;
+                    }
+                }
+            }
+        }
+    }
+    .header-buttons{
+        display: flex;
+        z-index: 100;
+        ul{
+            padding-left: 20px;
+            .nav-button{
+                width: 141px;
+                height: 49px;
+                box-shadow: $shade;
+                outline: none;
+                font-weight: bold;
+                cursor: pointer;
+            }
+            .login{
+                border: solid 1px #9a9acf;
+                background-color: $white;
+                color: #9a9acf;
+                &:hover{
+                    background-color: #9a9acf;
+                    color: $white;
+                    border-radius: 20px;
+                    outline: none;
+                    transition: 0.5s;
+                }
+            }
+            .signup{
+                border: solid 3px $pink;
+                background-color: $pink;
+                color: white;
+                &:hover{
+                    background-color: $white;
+                    color: $pink;
+                    border-radius: 20px;
+                    outline: none;
+                    transition: 0.5s;
+                }
+            }
+        }
+    }
+}
+
+
+.main-page-container{
+    display: flex;
+    .container-text{
+        width: 564px;
+        height: 466px;
+        margin-top: 110px;
+        margin-left: 180px;
+        h1{
+            color: #494949;
+            font-size: 50px;
+            font-weight: 400;
+            line-height: 1.3em;
+            margin-bottom: 20px;
+            font-family: $OpenSans;
+        }
+        p{
+            font-family: $OpenSans;
+            font-size: 17px;
+            margin-bottom: 20px;
+            line-height: 1.8em;
+            letter-spacing: 0.3px;
+            color: rgb(124,127,135);
+        }
+        button{
+            width: 210px;
+            height: 53px;
+            box-shadow: $shade;
+            outline: none;
+            font-weight: bold;
+            cursor: pointer;
+            border: solid 3px $pink;
+            background-color: $pink;
+            color: white;
+            margin-top: 20px;
+            border-radius: 40px;
+            &:hover{
+                background-color: $white;
+                color: $pink;
+                border-radius: 0;
+                outline: none;
+                transition: 0.5s;
+            }
+        }
+    }
+    .container-image{
+        position: absolute;
+        top: 62px;
+        right: 0px;
+        .computer{
+            position: absolute;
+            top: -30px;
+            right: 120px;
+        }
+    }
+}
+
+
+.container{
+    display: flex;
+    .form{
+        width: 320px;
+        height: 466px;
+        margin-top: 110px;
+        margin-left: 380px;
+        h1{
+            color: #494949;
+            font-size: 50px;
+            font-weight: 400;
+            line-height: 1.3em;
+            margin-bottom: 20px;
+            font-family: $OpenSans;
+        }
+        p{
+            font-family: $OpenSans;
+            font-size: 19px;
+            margin-bottom: 20px;
+            color: rgb(124,127,135);
+            a{
+                color: $pink;
+            }
+        }
+        form{
+            margin-top: 25px;
+            .form-input{
+                width: 300px;
+                height: 40px;
+                border: 0;
+                border-bottom: 1px solid grey;
+                outline: none;
+                font-size: 19px;
+            }
+            #password{
+                margin-bottom: 27px;
+            }
+            span{
+                a{
+                    font-family: $OpenSans;
+                    font-size: 19px;
+                    color: $pink;
+                    margin-top: 20px;
+                }
+            }
+            .checkbox{
+                margin-top: 10px;
+                label{
+                    color: #7f8497;
+                    font-family: $OpenSans;
+                    font-size: 15px;
+                }
+            }
+            button{
+                width: 230px;
+                height: 53px;
+                box-shadow: $shade;
+                outline: none;
+                font-weight: bold;
+                cursor: pointer;
+                border: solid 3px $pink;
+                background-color: $pink;
+                color: white;
+                margin-top: 40px;
+                border-radius: 40px;
+                &:hover{
+                    background-color: $white;
+                    color: $pink;
+                    outline: none;
+                    transition: 0.5s;
+                }
+            }
+        }
+    }
+    .phone-container{
+        position: absolute;
+        top: 103px;
+        right: 220px;
+    }
+    .computer-phone-container{
+        position: absolute;
+        top: 167px;
+        right: 220px;
+    }
+}
