@@ -8,10 +8,14 @@
             <form action="#">
                 @csrf
 
-                <input type="text" placeholder="Email" class="form-input">
-                <input type="password" placeholder="password" id="password" class="form-input">
-                <p>Already have an account? <a href="">Log In</a></p>
+                <input type="text" placeholder="Name" class="form-input" name="name">
+                <input type="text" placeholder="Email" class="form-input" name="email">
+                <input type="password" placeholder="password" class="form-input" name="password">
+                <input type="password" id="password-confirm" placeholder="confirm password" class="form-input" name="password_confirmation">
+                <p>Already have an account? <a href="login">Log In</a></p>
                 <button type="submit">Get Started!</button>
+
+                @include('errors')
             </form>
         </div>
         <div class="computer-phone-container">

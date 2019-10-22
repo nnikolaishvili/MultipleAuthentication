@@ -179,7 +179,7 @@ header{
                 outline: none;
                 font-size: 19px;
             }
-            #password{
+            #password-confirm{
                 margin-bottom: 27px;
             }
             span{
@@ -230,3 +230,11 @@ header{
         right: 220px;
     }
 }
+
+.user-container{
+    margin: 40px;
+    font-size: 17px;
+    text-align: center;
+    font-family: $OpenSans;
+}
+

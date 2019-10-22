@@ -21,5 +21,9 @@ Route::group(['middleware' => ['api.auth']], function () {
 
     Route::post('insert-push-token', 'API\PushTokenController@store');
     Route::delete('delete-push-token', 'API\PushTokenController@delete');
+
+    Route::post('insert-post', 'API\PostsController@insert');
+
+    Route::post('add-flight', 'API\FlightController@addFlight');
 });
 

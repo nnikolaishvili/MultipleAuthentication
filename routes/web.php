@@ -15,4 +15,7 @@
 
 Route::view('/', 'layouts.app')->name('MainPage');
 Route::view('login', 'login-view');
-Route::view('register', 'register-view');
+//Route::get('register', function (){
+//    return view('register-view');
+//});
+
